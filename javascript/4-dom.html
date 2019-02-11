@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+  <html>
+   <head>
+     <meta charset="utf-8" />
+     <title>Conditionals - example</title>
+     <style>
+     .message {
+       font-size: 45px;
+     }
+     </style>
+     <script>
+        function setletter(sender)
+        {
+            document.getElementsByClassName("message").item(0).textContent = ` ${sender.value}`;
+        }
+
+        function logKey(e)
+        {
+          document.getElementsByClassName("message").item(0).textContent += `${e.key}`;
+        }
+     </script>
+   </head>
+     <body>
+       <div><input  id="inputText" onkeypress="setletter(this)"    /></div>
+      <div><label class="message"></label></div>
+    </body>
+    <script>
+     //document.getElementById("inputText").addEventListener("keypress",logKey)
+    </script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+  <html>
+   <head>
+     <meta charset="utf-8" />
+     <title>Conditionals - example</title>
+     <script>
+
+      function showInformation(typeData)
+      {
+          if (typeData == 'date')
+          {
+              var d = new Date();
+              alert(d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear())
+          }
+          else if (typeData == 'language')
+          {
+              switch (window.navigator.language) {
+                case 'es':
+                  alert('Español')
+                  break;
+                case 'en':
+                  alert('Ingles')
+                  break;
+                case 'fr':
+                  alert('Frances')
+                  break;
+                default:
+                  alert(window.navigator.language)
+                  break;
+              }
+          }
+          else if (typeData == 'date')
+          {
+            alert(window.navigator.language)
+          }
+
+      }
+     </script>
+   </head>
+     <body>
+      <button onclick="showInformation('date')">Mostrar fecha</button>
+      <button onclick="showInformation('language')">Lenguaje</button>
+    </body>
+</html>

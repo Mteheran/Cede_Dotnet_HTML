@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+  <html>
+   <head>
+     <meta charset="utf-8" />
+     <title>ES5- Json - example</title>
+   </head>
+     <body>
+      <label id="lblJson"> </label>
+    </body>
+    <script>
+        var stringJson = '{"name":"John", "age":30, "city":"New York"}'
+
+        var obj = JSON.parse(stringJson)
+
+        //var myJSON = JSON.stringify(obj);
+
+        document.getElementById("lblJson").textContent = obj;
+
+    </script>
+</html>

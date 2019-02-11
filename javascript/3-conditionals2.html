@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+  <html>
+   <head>
+     <meta charset="utf-8" />
+     <title>Conditionals - example</title>
+     <script>
+
+      function showInformation(condition)
+      {
+              switch (condition)
+              {
+                case 1:
+                  alert(5 == '5')
+                  break;
+                case 2:
+                  alert(5 === '5')
+                  break;
+                case 3:
+                alert(5 != '5')
+                  break;
+                case 4:
+                alert(5 !== '5')
+                  break;
+                case 5:
+                alert(5 > 4)
+                  break;
+                case 6:
+                alert(10 <= 12)
+                  break;
+                case 7:
+                alert(5 > 1 && 4 < 10)
+                  break;
+                case 8:
+                alert(!(5 > 1))
+                  break;
+                default:
+                  alert(window.navigator.language)
+                  break;
+              }
+      }
+     </script>
+   </head>
+     <body>
+      <button onclick="showInformation(1)">5 == '5'</button>
+      <button onclick="showInformation(2)">5 === '5'</button>
+      <button onclick="showInformation(3)">5 != '5'</button>
+      <button onclick="showInformation(4)">5 !== '5'</button>
+      <button onclick="showInformation(5)">5 > 4</button>
+      <button onclick="showInformation(6)">10 <= 12</button>
+      <button onclick="showInformation(7)">5 > 1 && 4 < 10</button>
+      <button onclick="showInformation(8)">!(10 > 8)</button>
+    </body>
+</html>
