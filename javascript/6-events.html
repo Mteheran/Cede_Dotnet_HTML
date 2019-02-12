@@ -19,19 +19,19 @@
         {
             document.getElementsByClassName("message").item(0).textContent = ` ${sender.textContent}`;
         }
-        //function setdoubleletter(sender)
-        //{
-        //    document.getElementsByClassName("message").item(0).textContent = ` ${sender.textContent} + ${sender.textContent}`;
-        //}
+        function setdoubleletter(sender)
+        {
+            document.getElementsByClassName("message").item(0).textContent = ` ${sender.textContent}  ${sender.textContent}`;
+        }
      </script>
    </head>
      <body>
       <!--onmousedown, onmousemove,onmouseout -->
-       <label ondblclick="setdoubleletter(this)" onclick="setletter(this)">A</label>
-       <label onclick="setletter(this)">B</label>
-       <label onclick="setletter(this)">C</label>
-       <label onclick="setletter(this)">D</label>
-      <div><label class="message"></label></div>
-      <!--<button onclick="this.innerHTML = Date()">The time is?</button>-->
+       <label ondblclick="setdoubleletter(this)" onmouseout="setletter(this)">A</label>
+       <label onmouseout="setletter(this)">B</label>
+       <label onmouseout="setletter(this)">C</label>
+       <label onmouseout="setletter(this)">D</label>
+       <div><label class="message"></label></div>
+       <button onclick="this.innerHTML = Date()">The time is?</button>
     </body>
 </html>

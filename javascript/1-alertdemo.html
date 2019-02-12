@@ -14,13 +14,14 @@
 
       function showAlertAndParameter(parameter)
       {
-        alert('Mostrando alerta desde función con parametro :' +  parameter)
+        parameter = '5'
+        alert('Mostrando alerta desde función con parametro :' +  (parameter + 5))
       }
 
      </script>
    </head>
      <body>
       <button onclick="showAlert()">Mostrar alerta</button>
-      <button onclick="showAlertAndParameter('Parametro')">Mostrar alerta con parametro</button>
+      <button onclick="showAlertAndParameter(5)">Mostrar alerta con parametro</button>
     </body>
 </html>

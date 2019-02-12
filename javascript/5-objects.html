@@ -11,16 +11,17 @@
           lastName: "Doe",
           age: 50,
           eyeColor: "blue",
-          //fullName : function()
-          //{
-          //  return this.firstName + " " + this.lastName;
-          //}
+          estadoCivil: "soltero",
+          fullName : function()
+          {
+            return this.firstName + " " + this.lastName;
+          }
         };
         document.getElementById("firstName").textContent = person.firstName;
         document.getElementById("lastName").textContent = person.lastName;
         document.getElementById("age").textContent = person.age;
         document.getElementById("eyeColor").textContent = person.eyeColor;
-        //document.getElementById("fullName").textContent = person.fullName();
+        document.getElementById("fullName").textContent = person.fullName();
 
       });
      </script>

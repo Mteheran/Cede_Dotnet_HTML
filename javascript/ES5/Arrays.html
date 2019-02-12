@@ -8,28 +8,30 @@
       <label id="lblArray"> </label>
     </body>
     <script>
-         var numbers = ["One", "Two", "Three", "Four", "Five"];
-         document.getElementById("lblArray").textContent = numbers;
+         var numbers = ["One", "Two","Three", "Four", "Five"];
+         //document.getElementById("lblArray").textContent = numbers;
 
          //foreach
-/*         numbers.forEach(myFunction);
-        function myFunction(value) {
-          document.getElementById("lblArray").innerHTML = document.getElementById("lblArray").innerHTML + value + "<br>";
+         /* numbers.forEach(myFunction);
+           function myFunction(value) {
+
+          document.getElementById("lblArray").innerHTML = document.getElementById("lblArray").innerHTML + value + "<br />";
+
         } */
 
-/*         var numbers2 = numbers.map(myFunction);
+       /* var numbers2 = numbers.map(myFunction);
 
         function myFunction(value) {
           return value + " *";
         }
-        document.getElementById("lblArray").textContent = numbers2; */
+        document.getElementById("lblArray").textContent = numbers2;*/
 
-/*         var result = numbers.every(myFunction);
+        var result = numbers.every(myFunction);
 
         function myFunction(value) {
-          return value.indexOf("o") > 0;
+          return value.indexOf("o") > -1 || value.indexOf("O") > -1;
         }
-        document.getElementById("lblArray").textContent = result; */
+        document.getElementById("lblArray").textContent = result;
 
     </script>
 </html>

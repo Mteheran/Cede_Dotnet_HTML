@@ -19,12 +19,13 @@
           document.getElementsByClassName("message").item(0).textContent += `${e.key}`;
         }
      </script>
+     <script>
+      document.getElementById("inputText").addEventListener("keypress",logKey)
+     </script>
    </head>
      <body>
-       <div><input  id="inputText" onkeypress="setletter(this)"    /></div>
+       <div><input  id="inputText"  /></div>
       <div><label class="message"></label></div>
     </body>
-    <script>
-     //document.getElementById("inputText").addEventListener("keypress",logKey)
-    </script>
+
 </html>
